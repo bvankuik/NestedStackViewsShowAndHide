@@ -10,22 +10,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var sectionView: UIView!
-    @IBOutlet weak var groupView: UIView!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var addRemoveViewButton: UIButton!
 
-    @IBAction func buttonTouchUpInside(_ sender: UIButton) {
-        UIView.animate(withDuration: 0.33) {
-            self.groupView.isHidden = !self.groupView.isHidden
-        }
-    }
+    private let dummyView = UIView()
 
     @IBAction func button2TouchUpInside(_ sender: UIButton) {
         UIView.animate(withDuration: 0.33) {
-            self.sectionView.isHidden = !self.sectionView.isHidden
+            self.label.isHidden = !self.label.isHidden
+        }
+    }
+
+    @IBAction func addViewButtonTouchUpInside(_ sender: UIButton) {
+        if let dv = self.dummyView.superview {
+            self.addRemoveViewButton.setTitle("Add dummy view", for: .normal)
+            dv.removeFromSuperview()
+        } else {
+            self.addRemoveViewButton.setTitle("Remove dummy view", for: .normal)
+            self.stackView.addArrangedSubview(dummyView)
         }
     }
 
     override func viewDidLoad() {
+        self.addRemoveViewButton.setTitle("Add view", for: .normal)
     }
 }
 

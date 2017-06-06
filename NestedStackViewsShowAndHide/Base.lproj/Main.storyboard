@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Kcb-D9-78h">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -22,52 +22,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i26-b3-ghP" userLabel="Group View">
-                                <rect key="frame" x="0.0" y="120" width="375" height="567.5"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pZf-nx-htX">
+                                <rect key="frame" x="16" y="114" width="343" height="20.5"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="pZf-nx-htX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="567.5"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCW-Nj-biZ" userLabel="Section View">
-                                                <rect key="frame" x="67.5" y="0.0" width="240" height="567.5"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="uiE-vu-YBM">
-                                                        <rect key="frame" x="-0.5" y="0.0" width="240" height="567.5"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da2-kX-178">
-                                                                <rect key="frame" x="0.0" y="0.0" width="240" height="567.5"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="bottom" secondItem="uiE-vu-YBM" secondAttribute="bottom" id="Lff-Rl-Ebh"/>
-                                                    <constraint firstItem="uiE-vu-YBM" firstAttribute="top" secondItem="YCW-Nj-biZ" secondAttribute="top" id="QqH-Nb-owD"/>
-                                                    <constraint firstItem="uiE-vu-YBM" firstAttribute="leading" secondItem="YCW-Nj-biZ" secondAttribute="leading" id="VaA-fU-XcQ"/>
-                                                    <constraint firstAttribute="trailing" secondItem="uiE-vu-YBM" secondAttribute="trailing" id="avS-kB-wRV"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="da2-kX-178">
+                                        <rect key="frame" x="150.5" y="0.0" width="42" height="20.5"/>
+                                        <color key="backgroundColor" red="0.91137999030000005" green="0.42316210030000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.390918286" green="1" blue="0.99401604160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p12-4H-IdL">
+                                <rect key="frame" x="16" y="617" width="343" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="pZf-nx-htX" secondAttribute="trailing" id="7hL-nG-K7l"/>
-                                    <constraint firstAttribute="bottom" secondItem="pZf-nx-htX" secondAttribute="bottom" id="ESV-35-CFb"/>
-                                    <constraint firstItem="pZf-nx-htX" firstAttribute="top" secondItem="i26-b3-ghP" secondAttribute="top" id="k11-QW-6Xn"/>
-                                    <constraint firstItem="pZf-nx-htX" firstAttribute="leading" secondItem="i26-b3-ghP" secondAttribute="leading" id="kYM-8l-1V4"/>
+                                    <constraint firstAttribute="height" constant="50" id="G4o-j9-zvV"/>
                                 </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2f-cG-wXx" userLabel="Button 2">
-                                <rect key="frame" x="16" y="0.0" width="343" height="50"/>
+                                <state key="normal" title="Add/remove view"/>
+                                <connections>
+                                    <action selector="addViewButtonTouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hvn-Pw-aOU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M2f-cG-wXx">
+                                <rect key="frame" x="16" y="64" width="343" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="FWV-o7-4ja"/>
                                 </constraints>
-                                <state key="normal" title="Toggle yellow section view"/>
+                                <state key="normal" title="Toggle visibility"/>
                                 <connections>
                                     <action selector="button2TouchUpInside:" destination="BYZ-38-t0r" eventType="touchUpInside" id="md6-oW-V0P"/>
                                 </connections>
@@ -76,21 +58,44 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="M2f-cG-wXx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1J4-f0-AJ2"/>
-                            <constraint firstItem="i26-b3-ghP" firstAttribute="top" secondItem="M2f-cG-wXx" secondAttribute="bottom" constant="70" id="AT1-oE-Ezd"/>
-                            <constraint firstAttribute="trailing" secondItem="i26-b3-ghP" secondAttribute="trailing" id="U0r-Kr-hlv"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="pZf-nx-htX" secondAttribute="trailing" id="JNg-QT-QHm"/>
+                            <constraint firstItem="pZf-nx-htX" firstAttribute="top" secondItem="M2f-cG-wXx" secondAttribute="bottom" id="RMd-or-fCQ"/>
+                            <constraint firstItem="M2f-cG-wXx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="UBD-ab-HIn"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="p12-4H-IdL" secondAttribute="trailing" id="f5H-7a-kE3"/>
+                            <constraint firstItem="pZf-nx-htX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="g6y-SD-kuX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p12-4H-IdL" secondAttribute="bottom" id="ib7-xj-rz2"/>
+                            <constraint firstItem="p12-4H-IdL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kJd-40-61h"/>
                             <constraint firstAttribute="trailingMargin" secondItem="M2f-cG-wXx" secondAttribute="trailing" id="lbw-Hr-OZZ"/>
-                            <constraint firstItem="i26-b3-ghP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qaC-T0-Fbh"/>
-                            <constraint firstItem="M2f-cG-wXx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="zSF-9W-J2a"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="a2T-uu-0qt"/>
                     <connections>
-                        <outlet property="groupView" destination="i26-b3-ghP" id="L7O-AX-pi8"/>
-                        <outlet property="sectionView" destination="YCW-Nj-biZ" id="2Cx-au-yGv"/>
+                        <outlet property="addRemoveViewButton" destination="p12-4H-IdL" id="slE-lr-nNx"/>
+                        <outlet property="label" destination="da2-kX-178" id="irQ-wT-2lF"/>
+                        <outlet property="stackView" destination="pZf-nx-htX" id="juX-Q2-2sC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="126" y="126"/>
+            <point key="canvasLocation" x="1064.8" y="125.4872563718141"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xb1-HQ-jbv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Kcb-D9-78h" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SFz-44-eFV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="rFb-mQ-FHO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9J3-ma-JYh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="125.59999999999999" y="125.4872563718141"/>
         </scene>
     </scenes>
 </document>
