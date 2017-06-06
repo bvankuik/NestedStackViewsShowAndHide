@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var sectionView: UIView!
+    @IBOutlet weak var groupView: UIView!
 
     @IBAction func buttonTouchUpInside(_ sender: UIButton) {
         UIView.animate(withDuration: 0.33) {
@@ -18,5 +19,13 @@ class ViewController: UIViewController {
         }
     }
 
+    @IBAction func button2TouchUpInside(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.33) {
+            self.groupView.isHidden = !self.groupView.isHidden
+        }
+    }
+
+    override func viewDidLoad() {
+    }
 }
 
