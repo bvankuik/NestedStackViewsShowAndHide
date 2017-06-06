@@ -15,13 +15,13 @@ class ViewController: UIViewController {
 
     @IBAction func buttonTouchUpInside(_ sender: UIButton) {
         UIView.animate(withDuration: 0.33) {
-            self.sectionView.isHidden = !self.sectionView.isHidden
+            self.groupView.isHidden = !self.groupView.isHidden
         }
     }
 
     @IBAction func button2TouchUpInside(_ sender: UIButton) {
         UIView.animate(withDuration: 0.33) {
-            self.groupView.isHidden = !self.groupView.isHidden
+            self.sectionView.isHidden = !self.sectionView.isHidden
         }
     }
 
