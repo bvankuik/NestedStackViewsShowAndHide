@@ -10,16 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @IBOutlet weak var sectionView: UIView!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func buttonTouchUpInside(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.33) {
+            self.sectionView.isHidden = !self.sectionView.isHidden
+        }
     }
-
 
 }
 
